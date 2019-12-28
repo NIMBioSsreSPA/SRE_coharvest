@@ -1,8 +1,16 @@
+####################################################################################################
+########## Modeling Hunting and Harvesting Dynamics between Plant-Disperser Pair ###################
+## Kevin De Angeli | kevindeangeli@utk.edu
+## Eeman Abbasi    | eabbasi@sas.upenn.edu 
+## Alan Gan        | a@utk.edu
+## Last updated: Nov 4 2019
+##==================================================================================================
+### Script description: 
 # Variance-Based Sensitivity Analysis
-
-###=======================================================================
+#===================================================================================================
+###=================================================================================================
 ### Parameters
-###=======================================================================
+###=================================================================================================
 #install.packages('sensitivity')
 #install.packages('markovchain')
 
@@ -68,8 +76,6 @@ markovChain<- function(tEnd){
 # 6.  rMax (herbivore) ... [0.67, 1.1]
 # 7.  Adult Plant Carrying Capacity ... [20, 150]
 # 8.  delta_plant ... [0, 1]
-
-
 
 # Function 'plant_sobol'. To be used with Sobol global variance based sensitivity analysis (fast99)
 #
@@ -172,9 +178,6 @@ plant_sobol <- function(X)
   return(plantPopAfterTime)
   
 }
-
-
-
 
 # Function 'animal_sobol'. To be used with Sobol global variance based sensitivity analysis (fast99)
 #
